@@ -1,0 +1,67 @@
+/* src/components/QuickFeedback/QuickFeedback.css */
+.quick-feedback {
+  text-align: center;
+  padding: 20px;
+}
+
+.quick-feedback h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.quick-feedback form {
+  margin-bottom: 20px;
+}
+
+.quick-feedback input {
+  padding: 10px;
+  font-size: 1em;
+  width: 60%;
+  margin-right: 10px;
+}
+
+.quick-feedback button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quick-feedback button:hover {
+  background-color: #0056b3;
+}
+
+.quick-feedback h2 {
+  font-size: 1.5em;
+  margin-top: 40px;
+}
+
+.quick-feedback ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.quick-feedback li {
+  background-color: #f8f9fa;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.clear-feedback-button {
+  padding: 5px 10px;
+  font-size: 1em;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.clear-feedback-button:hover {
+  background-color: #5a6268;
+}

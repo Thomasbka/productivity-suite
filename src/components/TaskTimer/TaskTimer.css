@@ -1,0 +1,45 @@
+/* src/components/TaskTimer/TaskTimer.css */
+.task-timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.task-timer h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.task-timer input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.task-timer button {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.task-timer .clear-log {
+  background-color: lightgrey;
+}
+
+.task-timer .logs {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.task-timer .log-entry {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.task-timer .log-entry strong {
+  display: inline-block;
+  width: 100px;
+}

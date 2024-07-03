@@ -1,0 +1,124 @@
+/* src/components/Home/Home.css */
+.home {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+}
+
+.sidebar.hidden {
+  transform: translateX(-100%);
+}
+
+.sidebar.visible {
+  transform: translateX(0);
+}
+
+.sidebar h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.sidebar li.selected {
+  font-weight: bold;
+}
+
+.sidebar li:hover {
+  text-decoration: underline;
+}
+
+.toggle-sidebar {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.show-sidebar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center the content vertically */
+  text-align: center; /* Center the text within the content area */
+}
+
+.main-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.modules-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.module {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #f0f0f0; /* Light grey color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: move;
+  transition: background-color 0.3s ease;
+  position: relative; /* Add relative positioning for color picker */
+}
+
+.module a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9em;
+}
+
+.color-picker {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.color-swatch {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}

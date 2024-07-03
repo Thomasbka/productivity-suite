@@ -1,0 +1,99 @@
+/* src/components/InstantMeetingNotes/InstantMeetingNotes.css */
+.instant-meeting-notes {
+  text-align: center;
+  padding: 20px;
+}
+
+.instant-meeting-notes h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.instant-meeting-notes input,
+.instant-meeting-notes textarea {
+  padding: 10px;
+  font-size: 1em;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.instant-meeting-notes button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: block;
+  margin: auto;
+}
+
+.instant-meeting-notes button:hover {
+  background-color: #0056b3;
+}
+
+.instant-meeting-notes h2 {
+  font-size: 1.5em;
+  margin-top: 40px;
+}
+
+.instant-meeting-notes ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.instant-meeting-notes li {
+  background-color: #f8f9fa;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  position: relative;
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-date {
+  font-size: 0.8em;
+  color: #6c757d;
+}
+
+.note-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.edit-note-button,
+.delete-note-button {
+  padding: 5px 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.edit-note-button {
+  background-color: #ffc107;
+  color: white;
+}
+
+.edit-note-button:hover {
+  background-color: #e0a800;
+}
+
+.delete-note-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.delete-note-button:hover {
+  background-color: #c82333;
+}
